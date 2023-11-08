@@ -1,4 +1,4 @@
-# GitHub Dev Detective (HTML/CSS/JavaScript)
+# GitHub Dev Detective
 
 ## About
 
