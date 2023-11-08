@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDetective</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Images/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- JS -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+            <!-- ----------------Header-Section---------------- -->
+            <div class="header">
+                <h1>DevDetective</h1>
+                <div class="dark-mode">
+                    <p dark-text></p>
+                    <img src="Images/moon-icon.svg" alt="light-mode" loading="lazy" darkIcon>
+                </div>
+            </div>
+
+            <!-- ------------------Main-Content------------------ -->
+            <main>
+
+            
+                <!-- -------------------SearchBar-Section------------------------ -->
+                <div class="search-section">
+                    <!-- <img src="Images/search-icon.svg" alt="search-icon" loading="lazy"> -->
+                    <input type="text" placeholder="Enter a Github Username..." required
+                    autofocus id="searchInput">
+                    <div class="error">
+                        <p id="noResults">no search results</p>
+                    </div>
+
+                    <button class="btn">Search</button>
+                </div>
+
+                <!-- ------------------Profile-Content-Section------------------- -->
+                <div class="profile-Container">
+                    <!-- profile header -->
+                    <div class="profile-Header">
+                        <div class="profile-pic-name">
+                            <img src="" id="userImage" width="90px" height="90px">
+
+                            <div class="profile-Header-userName">
+                                <p class="userName"></p>
+                                <a href="#" data-userName></a>
+                            </div>
+                        </div>
+                        
+
+                        <p id="date"></p>
+                    </div>
+
+
+                    <!-- ----------------------profile description-------------------- -->
+                    <div class="profile-desc">
+                        <p class="profile-bio"></p>
+                    </div>
+
+                    <!-- ----------------Follower & Repo Info------------------------ -->
+                    <div class="repo-info-container">
+                        <div class="repo-info">
+                            <p>Repos</p>
+                            <a href="" id="repos"></a>
+                        </div>
+
+                        <div class="repo-info">
+                            <p>Followers</p>
+                            <a href="" id="followers"></a>
+                        </div>
+
+                        <div class="repo-info">
+                            <p>Following</p>
+                            <a href="" id="following"></a>
+                        </div>
+                    </div>
+
+                    <!-- -----------------------Social Media Section-------------------- -->
+                    <div class="profile-footer">
+                        <div class="bottom">
+                            <img src="Images/location-icon.svg" alt="twitter" loading="lazy" class="bottomImg">
+                            <p id="location"></p>
+                        </div>
+
+                        <div class="bottom">
+                            <img src="Images/website-icon.svg" alt="twitter" loading="lazy" class="bottomImg">
+                            <a href="#" id="websiteLink"></a>
+                        </div>
+
+                        <div class="bottom">
+                            <img src="Images/twitter-icon.svg" alt="twitter" loading="lazy" class="bottomImg">
+                            <a href="" id="twitter"></a>
+                        </div>
+
+                        <div class="bottom">
+                            <img src="Images/company-icon.svg" alt="twitter" loading="lazy" class="bottomImg">
+                            <p id="company"></p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
